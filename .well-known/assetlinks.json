@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.travel_app_new_version",
+      "sha256_cert_fingerprints": [
+        "6D:C3:F5:43:63:5B:46:71:8A:85:5E:2A:99:72:E7:F7:96:91:6A:D4:D2:05:3D:52:DA:1A:A6:EC:32:32:BC:6D"
+      ]
+    }
+  }
+]
