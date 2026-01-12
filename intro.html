@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-  <meta charset="utf-8">
-  <title>GitHub Pages Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App 下載</title>
 </head>
-<body>
-  <h1>GitHub Pages 已啟用</h1>
+<body style="text-align:center; padding:40px; font-family: system-ui;">
+
+<h2>歡迎使用本系統</h2>
+<p>請依您的裝置下載 App</p>
+
+<!-- Android -->
+<a id="android"
+   href="https://play.google.com/store/apps/details?id=你的.package.name"
+   style="display:none; font-size:18px;">
+   👉 前往 Google Play 下載
+</a>
+
+<br><br>
+
+<!-- iOS -->
+<a id="ios"
+   href="https://apps.apple.com/app/id你的AppID"
+   style="display:none; font-size:18px;">
+   👉 前往 App Store 下載
+</a>
+
+<script>
+const ua = navigator.userAgent || navigator.vendor;
+if (/android/i.test(ua)) {
+  document.getElementById('android').style.display = 'inline';
+}
+if (/iPhone|iPad|iPod/i.test(ua)) {
+  document.getElementById('ios').style.display = 'inline';
+}
+</script>
+
 </body>
 </html>
+
