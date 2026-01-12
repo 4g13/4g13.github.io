@@ -4,38 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App 下載</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffffff;
+      color: #222;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 26px;
+      font-size: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .android {
+      background-color: #3ddc84;
+    }
+    .ios {
+      background-color: #999;
+    }
+    .note {
+      font-size: 14px;
+      color: #666;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body style="text-align:center; padding:40px; font-family: system-ui;">
 
-<h2>歡迎使用本系統</h2>
-<p>請依您的裝置下載 App</p>
+<body>
 
-<!-- Android -->
-<a id="android"
-   href="https://play.google.com/store/apps/details?id=你的.package.name"
-   style="display:none; font-size:18px;">
-   👉 前往 Google Play 下載
-</a>
+  <h1>歡迎使用本系統</h1>
+  <p>目前為測試版本，請依裝置下載</p>
 
-<br><br>
+  <!-- Android：未上架，使用 GitHub APK -->
+  <a id="androidBtn"
+     class="btn android"
+     href="https://github.com/4g13/nanliao_app_page/releases/latest"
+     style="display:none;">
+     🤖 Android 下載 APK（測試版）
+  </a>
 
-<!-- iOS -->
-<a id="ios"
-   href="https://apps.apple.com/app/id你的AppID"
-   style="display:none; font-size:18px;">
-   👉 前往 App Store 下載
-</a>
+  <!-- iOS：未上架，顯示說明 -->
+  <div id="iosBox" style="display:none;">
+    <p class="note">
+      🍎 iOS 版本尚未上架<br>
+      請等待正式發布
+    </p>
+  </div>
 
-<script>
-const ua = navigator.userAgent || navigator.vendor;
-if (/android/i.test(ua)) {
-  document.getElementById('android').style.display = 'inline';
-}
-if (/iPhone|iPad|iPod/i.test(ua)) {
-  document.getElementById('ios').style.display = 'inline';
-}
-</script>
+  <script>
+    const ua = navigator.userAgent || navigator.vendor;
+
+    if (/android/i.test(ua)) {
+      document.getElementById('androidBtn').style.display = 'inline-block';
+    }
+
+    if (/iPhone|iPad|iPod/i.test(ua)) {
+      document.getElementById('iosBox').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
-
