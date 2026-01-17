@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "YOUR_TEAM_ID.com.example.travelplusApp",
+        "appID": "B822XURGHS.com.example.travel_app_new_version",
         "paths": [
           "/intro.html*"
         ]
