@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.devopssec.nanliao",
+      "package_name": "com.devsecops.nanliao",
       "sha256_cert_fingerprints": [
         "BF:F0:DA:EC:E9:51:54:50:A2:0E:40:3D:90:B0:14:D5:29:47:48:F0:67:C5:5D:B0:36:30:95:D8:0A:E8:0F:2E"
       ]
